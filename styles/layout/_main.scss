@@ -1,110 +1,117 @@
-.main__title{
-    color: lightgray;
-    margin: 2rem 0;
-    text-align: center;
-}
-#maincontainer{
-    height: 24rem;
-    background: linear-gradient(90deg,rgba(104, 168, 241, 0.6) 1%, rgba(141, 197, 254, 0.8) 25%,rgba(141, 197, 254, 0.8) 75%, rgba(104, 168, 241, 0.6) 99%);
-    border-radius: pxArem(9);
-    box-shadow: 0 pxArem(12) pxArem(12) rgb(100, 186, 230);
-    border: pxArem(2) solid lightgray;
 
-    #btn-agregar-tarea{
-     
-        margin: pxArem(24) 0;
+    
+
+
+    .main__title{
+        color: lightgray;
+        margin: 2rem 0;
         text-align: center;
-        width: pxArem(300);
-        @include movilSML(){
-            width: pxArem(150);
-        }
-        
-        
     }
-
-    @include movilSML(){
-        height: pxArem(390);
-    }
-}
-
-
-
-#formcontainer{
-    @extend %formStyles;
-   
-        .tarea__header{
-            @include flex(row);
-            align-items: center;
-            justify-content: flex-end;
-            width: 100%;
-            margin: pxArem(12) 0;
-            button{
-                border: none;
-                background-color: transparent;
-                svg{
-                    width: pxArem(27);
-                    height: pxArem(27);
-                    color: red;
-                    
-                }
-            }
-        }
-        
-        .tarea__body{
-
-            @include flex(column);
-            
-            label[for="titulo-input"]{
-                margin-bottom: pxArem(3);
-                font-weight: bold;
-            }
-            label[for="fecha-input"]{
-                margin: pxArem(3) 0;
-                font-weight: bold;
-            }
-            label[for="descripcion-input"]{
-                margin: pxArem(3) 0;
-                font-weight: bold;
-            }
-        }
-
-        .tarea__footer{
-            @include flex(row);
-            justify-content: center;
-            #agregar-actualizar-tarea{
-            margin: pxArem(12) 0;
+    #maincontainer{
+        height: 24rem;
+        background: linear-gradient(90deg,rgba(104, 168, 241, 0.6) 1%, rgba(141, 197, 254, 0.8) 25%,rgba(141, 197, 254, 0.8) 75%, rgba(104, 168, 241, 0.6) 99%);
+        border-radius: pxArem(9);
+        box-shadow: 0 pxArem(12) pxArem(12) rgb(100, 186, 230);
+        border: pxArem(2) solid lightgray;
+    
+        #btn-agregar-tarea{
+         
+            margin: pxArem(24) 0;
             text-align: center;
             width: pxArem(300);
-
             @include movilSML(){
-            width: pxArem(150);
+                width: pxArem(150);
             }
-            }
+            
+            
         }
     
-}
-
-#confirmar-cerrar-dialogo{
-    margin: auto auto;
-    width: pxArem(400);
-    border-radius: pxArem(9);
-    padding: pxArem(18);
+        @include movilSML(){
+            height: pxArem(390);
+        }
+    }
     
     
     
-
-    .dialog__p{
-        font-weight: bold;
-        font-size: clamp(1rem, 1vw, 3rem);
+    #formcontainer{
+        @extend %formStyles;
+       
+            .tarea__header{
+                @include flex(row);
+                align-items: center;
+                justify-content: flex-end;
+                width: 100%;
+                margin: pxArem(12) 0;
+                button{
+                    border: none;
+                    background-color: transparent;
+                    svg{
+                        width: pxArem(27);
+                        height: pxArem(27);
+                        color: red;
+                        
+                    }
+                }
+            }
+            
+            .tarea__body{
+    
+                @include flex(column);
+                
+                label[for="titulo-input"]{
+                    margin-bottom: pxArem(3);
+                    font-weight: bold;
+                }
+                label[for="fecha-input"]{
+                    margin: pxArem(3) 0;
+                    font-weight: bold;
+                }
+                label[for="descripcion-input"]{
+                    margin: pxArem(3) 0;
+                    font-weight: bold;
+                }
+            }
+    
+            .tarea__footer{
+                @include flex(row);
+                justify-content: center;
+                #agregar-actualizar-tarea{
+                margin: pxArem(12) 0;
+                text-align: center;
+                width: pxArem(300);
+    
+                @include movilSML(){
+                width: pxArem(150);
+                }
+                }
+            }
         
     }
-
-    .confirmar-cerrar-dialogo__container{
-        @include flex(row);
-        justify-content: center;
-        gap: pxArem(27);
+    
+    #confirmar-cerrar-dialogo{
+        margin: auto auto;
+        width: pxArem(400);
+        border-radius: pxArem(9);
+        padding: pxArem(18);
+        
+        
+        
+    
+        .dialog__p{
+            font-weight: bold;
+            font-size: clamp(1rem, 1vw, 3rem);
+            
+        }
+    
+        .confirmar-cerrar-dialogo__container{
+            @include flex(row);
+            justify-content: center;
+            gap: pxArem(27);
+        }
     }
-}
+
+
+
 
 .hidden{
     display: none;
