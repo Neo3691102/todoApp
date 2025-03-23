@@ -116,14 +116,14 @@
 }
 
 .footer__section {
-  height: 5rem;
+  height: 7.5rem;
   position: absolute;
   bottom: 0;
   color: white;
   text-align: center;
 }
 .footer__section .footer__p {
-  margin: 1.125rem 0 0.375rem 0;
+  margin: 1.125rem 0;
   font-size: clamp(0.65rem, 1vw, 1rem);
 }
 @media screen and (max-width: 575px) {
