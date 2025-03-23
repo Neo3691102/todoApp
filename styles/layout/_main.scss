@@ -6,6 +6,9 @@
         color: lightgray;
         margin: 2rem 0;
         text-align: center;
+        @include movilSML(){
+            margin: pxArem(16) 0;
+        }
     }
     #maincontainer{
         height: 24rem;
