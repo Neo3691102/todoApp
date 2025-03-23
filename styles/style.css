@@ -1,0 +1,24 @@
+.main__title {
+  color: lightgray;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.container {
+  height: 27rem;
+  background: linear-gradient(90deg, rgba(104, 168, 241, 0.6) 1%, rgba(141, 197, 254, 0.8) 25%, rgba(141, 197, 254, 0.8) 75%, rgba(104, 168, 241, 0.6) 99%);
+  border-radius: 0.5625rem;
+  box-shadow: 0 0.75rem 0.75rem rgb(100, 186, 230);
+  border: 0.125rem solid lightgray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Encode Sans", Times-New-Roman;
+}
+
+body {
+  background: linear-gradient(90deg, #2A2B75 5%, #0685da 50%, #2A2B75 95%);
+}/*# sourceMappingURL=style.css.map */
