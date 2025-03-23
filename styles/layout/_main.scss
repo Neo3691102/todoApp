@@ -71,6 +71,28 @@
     
 }
 
+#confirmar-cerrar-dialogo{
+    margin: auto auto;
+    width: pxArem(400);
+    border-radius: pxArem(9);
+    padding: pxArem(18);
+    
+    
+    
+
+    .dialog__p{
+        font-weight: bold;
+        font-size: clamp(1rem, 1vw, 3rem);
+        
+    }
+
+    .confirmar-cerrar-dialogo__container{
+        @include flex(row);
+        justify-content: center;
+        gap: pxArem(27);
+    }
+}
+
 .hidden{
     display: none;
 }
