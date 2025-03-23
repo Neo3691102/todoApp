@@ -1,0 +1,12 @@
+.main__title{
+    color: lightgray;
+    margin: 2rem 0;
+    text-align: center;
+}
+.container{
+    height: 27rem;
+    background: linear-gradient(90deg,rgba(104, 168, 241, 0.6) 1%, rgba(141, 197, 254, 0.8) 25%,rgba(141, 197, 254, 0.8) 75%, rgba(104, 168, 241, 0.6) 99%);
+    border-radius: pxArem(9);
+    box-shadow: 0 pxArem(12) pxArem(12) rgb(100, 186, 230);
+    border: pxArem(2) solid lightgray;
+}
