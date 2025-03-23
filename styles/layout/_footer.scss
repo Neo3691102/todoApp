@@ -1,0 +1,16 @@
+.footer__section{
+    width: 100%;
+    height: pxArem(80);
+   
+
+    
+ 
+    color:white;
+    text-align:center;
+    @include flex(column);
+    justify-content: center;
+
+    .footer__p{
+        margin:pxArem(18) 0 pxArem(6) 0;
+    }
+}
