@@ -77,6 +77,23 @@
   }
 }
 
+#confirmar-cerrar-dialogo {
+  margin: auto auto;
+  width: 25rem;
+  border-radius: 0.5625rem;
+  padding: 1.125rem;
+}
+#confirmar-cerrar-dialogo .dialog__p {
+  font-weight: bold;
+  font-size: clamp(1rem, 1vw, 3rem);
+}
+#confirmar-cerrar-dialogo .confirmar-cerrar-dialogo__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.6875rem;
+}
+
 .hidden {
   display: none;
 }
