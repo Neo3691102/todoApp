@@ -1,15 +1,84 @@
+#formcontainer {
+  background: linear-gradient(90deg, rgb(222, 228, 236), rgb(162, 181, 209));
+  border: 0.125rem solid black;
+  height: 27rem;
+  border-radius: 0.5625rem;
+  box-shadow: 0 0.75rem 0.75rem rgb(100, 186, 230);
+}
+@media screen and (max-width: 575px) {
+  #formcontainer {
+    height: 24.375rem;
+  }
+}
+
 .main__title {
   color: lightgray;
   margin: 2rem 0;
   text-align: center;
 }
 
-.container {
+#maincontainer {
   height: 27rem;
   background: linear-gradient(90deg, rgba(104, 168, 241, 0.6) 1%, rgba(141, 197, 254, 0.8) 25%, rgba(141, 197, 254, 0.8) 75%, rgba(104, 168, 241, 0.6) 99%);
   border-radius: 0.5625rem;
   box-shadow: 0 0.75rem 0.75rem rgb(100, 186, 230);
   border: 0.125rem solid lightgray;
+}
+#maincontainer #btn-agregar-tarea {
+  margin: 1.5rem 0;
+  text-align: center;
+  width: 18.75rem;
+}
+@media screen and (max-width: 575px) {
+  #maincontainer #btn-agregar-tarea {
+    width: 9.375rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  #maincontainer {
+    height: 24.375rem;
+  }
+}
+
+#formcontainer .tarea__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0.75rem 0;
+}
+#formcontainer .tarea__header button {
+  border: none;
+  background-color: transparent;
+}
+#formcontainer .tarea__header button svg {
+  width: 1.6875rem;
+  height: 1.6875rem;
+  color: red;
+}
+#formcontainer .tarea__body {
+  display: flex;
+  flex-direction: column;
+}
+#formcontainer .tarea__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#formcontainer .tarea__footer #agregar-actualizar-tarea {
+  margin: 1.5rem 0;
+  text-align: center;
+  width: 18.75rem;
+}
+@media screen and (max-width: 575px) {
+  #formcontainer .tarea__footer #agregar-actualizar-tarea {
+    width: 9.375rem;
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 * {
