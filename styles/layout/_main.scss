@@ -4,7 +4,7 @@
     text-align: center;
 }
 #maincontainer{
-    height: 27rem;
+    height: 24rem;
     background: linear-gradient(90deg,rgba(104, 168, 241, 0.6) 1%, rgba(141, 197, 254, 0.8) 25%,rgba(141, 197, 254, 0.8) 75%, rgba(104, 168, 241, 0.6) 99%);
     border-radius: pxArem(9);
     box-shadow: 0 pxArem(12) pxArem(12) rgb(100, 186, 230);
@@ -51,15 +51,28 @@
         }
         
         .tarea__body{
+
             @include flex(column);
             
+            label[for="titulo-input"]{
+                margin-bottom: pxArem(3);
+                font-weight: bold;
+            }
+            label[for="fecha-input"]{
+                margin: pxArem(3) 0;
+                font-weight: bold;
+            }
+            label[for="descripcion-input"]{
+                margin: pxArem(3) 0;
+                font-weight: bold;
+            }
         }
 
         .tarea__footer{
             @include flex(row);
             justify-content: center;
             #agregar-actualizar-tarea{
-            margin: pxArem(24) 0;
+            margin: pxArem(12) 0;
             text-align: center;
             width: pxArem(300);
 
