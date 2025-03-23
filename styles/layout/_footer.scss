@@ -1,6 +1,6 @@
 .footer__section{
     
-    height: pxArem(80);
+    height: pxArem(120);
     position: absolute;
     bottom: 0;
     color:white;
@@ -8,7 +8,7 @@
     
 
     .footer__p{
-        margin:pxArem(18) 0 pxArem(6) 0;
+        margin:pxArem(18) 0;
         font-size: clamp(0.65rem, 1vw, 1rem);
         @include movilSML(){
             margin: pxArem(6) 0;
